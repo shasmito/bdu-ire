@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+  
+}
+body{
+    @apply bg-light
+}
+
+.button {
+    @apply bg-dark hover:bg-primary text-base px-6 py-2 rounded-lg flex flex-row items-center w-1/4 gap-x-3 
+}
+
+.heading{
+    @apply text-2xl md:text-4xl font-bold  text-black
+}
+
+.title{
+    @apply text-2xl font-bold
+}
+
+.sub-heading{
+    @apply text-sm text-gray text-center md:w-1/2 mt-6
+}
+
+.mission{
+    background-image: url("../src/assets/home/bg/wave.png");
+    object-fit: contain;
+}
+
+
+@layer base {
+    ul,
+    ol {
+      list-style: revert;
+    }
+}  
